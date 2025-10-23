@@ -16,17 +16,17 @@ int main()
 		temp = num;
 		while (temp % 2 == 0) {
 			temp /= 2;
-		}
+		}                  // Remove all 2's as factors
 		while (temp % 3 == 0) {
                         temp /= 3;
-                }
+                }                  // Remove all 3's as factors
 		while (temp % 5 == 0) {
                         temp /= 5;
-                }
+                }                  // Remove all 5's as factors
 		while (temp % 7 == 0) {
                         temp /= 7;
-                }
-		if (temp == 1) {
+                }                  // Remove all 7's as factors
+		if (temp == 1) {   // Are there any remaining factors?
 			printf("%d is a humble number\n", num);
 		}
 	}
